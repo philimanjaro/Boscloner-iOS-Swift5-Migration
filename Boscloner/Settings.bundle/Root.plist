@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>Title</key>
+	<string>Boscloner Preferences</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>RFID Badge Type</string>
+			<key>Key</key>
+			<string>default_rfid_type</string>
+			<key>DefaultValue</key>
+			<string>typeHIDProx</string>
+			<key>Titles</key>
+			<array>
+				<string>HID ProxCard (125Khz)</string>
+				<string>HID Indala (125Khz)</string>
+				<string>EM4100 (125khz)</string>
+				<string>HID iClass Legacy (13.56Mhz)</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>typeHIDProx</string>
+				<string>typeHIDIndala</string>
+				<string>typeEM4100</string>
+				<string>typeHIDiClass</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>AutoClone Defaults</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Enabled</string>
+			<key>Key</key>
+			<string>default_autoclone_setting</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>

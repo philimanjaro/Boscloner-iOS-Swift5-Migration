@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YiH-Iv-rfr">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Boscloner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gFl-kZ-ic8"/>
+                        <viewControllerLayoutGuide type="bottom" id="JiD-N0-Foh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJi-mO-FQT" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="644" width="375" height="85"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMd-5E-Qgh" userLabel="CustomWriteView">
+                                        <rect key="frame" x="20" y="4" width="141" height="77"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Custom Write" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="My0-Ej-e2M">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1o-vl-BXS">
+                                                <rect key="frame" x="50" y="29" width="40" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="Write-Icon">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="customWriteIcon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IW2-lY-fgL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="77" id="YRA-pZ-J84"/>
+                                            <constraint firstAttribute="width" constant="140.33000000000001" id="haV-QW-iAp"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YrA-uC-Xni" userLabel="AutoCloneView">
+                                        <rect key="frame" x="232" y="9" width="107" height="60"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bSm-y3-p4m">
+                                                <rect key="frame" x="28" y="32" width="51" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="uiSwitchValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="X2Z-T1-IRX"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AutoClone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvH-bc-BxA">
+                                                <rect key="frame" x="0.0" y="0.0" width="108" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="0NU-Sh-ES5"/>
+                                            <constraint firstAttribute="width" constant="107.67" id="mUD-PH-dp4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QMd-5E-Qgh" firstAttribute="top" secondItem="lJi-mO-FQT" secondAttribute="top" constant="4" id="Ftb-me-XfM"/>
+                                    <constraint firstAttribute="trailing" secondItem="YrA-uC-Xni" secondAttribute="trailing" constant="36" id="VN2-zH-Jru"/>
+                                    <constraint firstItem="QMd-5E-Qgh" firstAttribute="leading" secondItem="lJi-mO-FQT" secondAttribute="leading" constant="20" id="s6s-5p-UYP"/>
+                                    <constraint firstAttribute="bottom" secondItem="YrA-uC-Xni" secondAttribute="bottom" constant="16" id="tgF-Jf-s1E"/>
+                                    <constraint firstItem="YrA-uC-Xni" firstAttribute="top" secondItem="lJi-mO-FQT" secondAttribute="top" constant="9" id="xbC-jN-D5V"/>
+                                </constraints>
+                            </view>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NkE-HX-EdJ">
+                                <rect key="frame" x="0.0" y="729" width="375" height="83"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="history" id="Yx2-Il-qd9"/>
+                                    <tabBarItem systemItem="more" id="5Zb-H8-Ojf"/>
+                                </items>
+                            </tabBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RBx-MN-w3G">
+                                <rect key="frame" x="0.0" y="95" width="375" height="549"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" id="ic5-5E-JTl">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ic5-5E-JTl" id="g7b-KU-Fqs">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AjJ-UO-fx1" userLabel="TopView">
+                                <rect key="frame" x="52.666666666666657" y="36" width="270" height="51"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All-In-One RFID Cloning Toolkit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a86-kZ-Dvq">
+                                        <rect key="frame" x="0.0" y="31" width="196" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Boscloner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUo-Jt-Fi9">
+                                        <rect key="frame" x="0.0" y="3" width="125" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bosclonerLogo" translatesAutoresizingMaskIntoConstraints="NO" id="7VL-aS-JkS">
+                                        <rect key="frame" x="211" y="3" width="56" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="3OQ-Qe-uHN"/>
+                                    <constraint firstAttribute="width" constant="270" id="lQz-LQ-WTM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jM5-MH-kau">
+                                <rect key="frame" x="0.0" y="95" width="375" height="717"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eb8-WL-rx4" userLabel="ActivityIndicatorView">
+                                        <rect key="frame" x="9.6666666666666572" y="110" width="357" height="70"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YVk-g4-aEZ">
+                                                <rect key="frame" x="160" y="0.0" width="37" height="37"/>
+                                                <subviews>
+                                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="KVS-yw-fmQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="37" height="37"/>
+                                                    </activityIndicatorView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="37" id="1Oh-D8-qQm"/>
+                                                    <constraint firstAttribute="height" constant="37" id="b4z-hh-Fiy"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attempting Connection to Boscloner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7u-5n-8JK">
+                                                <rect key="frame" x="32" y="38" width="294" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="293.67000000000002" id="Ybj-n4-KuG"/>
+                                                    <constraint firstAttribute="height" constant="32" id="jMl-cs-Swj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="20"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="4Vb-lr-ooO"/>
+                                            <constraint firstItem="YVk-g4-aEZ" firstAttribute="top" secondItem="eb8-WL-rx4" secondAttribute="top" id="6mC-DP-c0R"/>
+                                            <constraint firstItem="YVk-g4-aEZ" firstAttribute="centerX" secondItem="eb8-WL-rx4" secondAttribute="centerX" id="KmR-ai-eYo"/>
+                                            <constraint firstAttribute="bottom" secondItem="n7u-5n-8JK" secondAttribute="bottom" id="T0E-fh-efY"/>
+                                            <constraint firstItem="n7u-5n-8JK" firstAttribute="centerX" secondItem="eb8-WL-rx4" secondAttribute="centerX" id="o7D-1a-07H"/>
+                                            <constraint firstAttribute="width" constant="357" id="yV1-Q9-2Hd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="eb8-WL-rx4" firstAttribute="top" secondItem="jM5-MH-kau" secondAttribute="top" constant="110" id="FLS-Rg-CDM"/>
+                                    <constraint firstItem="eb8-WL-rx4" firstAttribute="centerX" secondItem="jM5-MH-kau" secondAttribute="centerX" id="bi9-2g-i6N"/>
+                                    <constraint firstItem="eb8-WL-rx4" firstAttribute="centerX" secondItem="jM5-MH-kau" secondAttribute="centerX" id="wa8-zK-GF5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AjJ-UO-fx1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5fX-4U-xDf"/>
+                            <constraint firstItem="lJi-mO-FQT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Q6-0N-XzY"/>
+                            <constraint firstItem="jM5-MH-kau" firstAttribute="top" secondItem="AjJ-UO-fx1" secondAttribute="bottom" constant="8" id="AcZ-ET-r5P"/>
+                            <constraint firstAttribute="bottom" secondItem="NkE-HX-EdJ" secondAttribute="bottom" id="EoH-up-hUP"/>
+                            <constraint firstAttribute="trailing" secondItem="RBx-MN-w3G" secondAttribute="trailing" id="IsU-zN-Adt"/>
+                            <constraint firstItem="lJi-mO-FQT" firstAttribute="top" secondItem="RBx-MN-w3G" secondAttribute="bottom" id="NKB-2X-w1W"/>
+                            <constraint firstAttribute="trailing" secondItem="lJi-mO-FQT" secondAttribute="trailing" id="PUM-II-bxU"/>
+                            <constraint firstItem="AjJ-UO-fx1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="36" id="U9f-gd-ik4"/>
+                            <constraint firstItem="RBx-MN-w3G" firstAttribute="top" secondItem="AjJ-UO-fx1" secondAttribute="bottom" constant="8" id="W6k-hO-flt"/>
+                            <constraint firstItem="JiD-N0-Foh" firstAttribute="top" secondItem="lJi-mO-FQT" secondAttribute="bottom" id="Xkh-kA-t9S"/>
+                            <constraint firstAttribute="bottom" secondItem="jM5-MH-kau" secondAttribute="bottom" id="c65-he-GCV"/>
+                            <constraint firstItem="jM5-MH-kau" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cVb-6F-3SM"/>
+                            <constraint firstItem="RBx-MN-w3G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f5y-DK-Umi"/>
+                            <constraint firstItem="jM5-MH-kau" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fxs-Pz-a9C"/>
+                            <constraint firstItem="NkE-HX-EdJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iTs-1r-kSh"/>
+                            <constraint firstItem="RBx-MN-w3G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nhh-t1-krH"/>
+                            <constraint firstItem="lJi-mO-FQT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oF7-N8-RJS"/>
+                            <constraint firstAttribute="trailing" secondItem="jM5-MH-kau" secondAttribute="trailing" id="umS-Cr-YPk"/>
+                            <constraint firstAttribute="trailing" secondItem="NkE-HX-EdJ" secondAttribute="trailing" id="vUj-PR-rnu"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="homeTabIcon" id="qA5-7l-JPX"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="KVS-yw-fmQ" id="87F-33-sH2"/>
+                        <outlet property="shadowView" destination="jM5-MH-kau" id="afw-4n-VGV"/>
+                        <outlet property="tableView" destination="RBx-MN-w3G" id="0jM-d5-uIf"/>
+                        <outlet property="uiSwitch" destination="bSm-y3-p4m" id="z1F-lX-Ag6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1864.8" y="217.24137931034483"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="Een-Rz-qKh">
+            <objects>
+                <viewController id="cpO-rZ-Upb" customClass="settingsViewController" customModule="Boscloner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c2M-8J-7gX"/>
+                        <viewControllerLayoutGuide type="bottom" id="HO5-W5-esw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yny-Ba-an7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rn7-iu-KlP">
+                                <rect key="frame" x="71" y="396" width="233" height="20"/>
+                                <string key="text">Access Boscloner Preferences
+in System Settings</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqc-jK-OzO">
+                                <rect key="frame" x="159" y="418" width="57" height="30"/>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <action selector="goToSettings:" destination="cpO-rZ-Upb" eventType="touchUpInside" id="lSn-OD-M8P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rn7-iu-KlP" firstAttribute="centerY" secondItem="Yny-Ba-an7" secondAttribute="centerY" id="53b-zQ-vqe"/>
+                            <constraint firstItem="rqc-jK-OzO" firstAttribute="centerX" secondItem="Yny-Ba-an7" secondAttribute="centerX" id="IEu-Jq-lSw"/>
+                            <constraint firstItem="rqc-jK-OzO" firstAttribute="top" secondItem="Rn7-iu-KlP" secondAttribute="bottom" constant="1.6699999999999999" id="WVY-Ud-k39"/>
+                            <constraint firstItem="Rn7-iu-KlP" firstAttribute="centerX" secondItem="Yny-Ba-an7" secondAttribute="centerX" id="oBu-AP-T4l"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="BQD-gD-Y4D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="37Q-aT-xj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="505" y="1357"/>
+        </scene>
+        <!--View Controller - History-->
+        <scene sceneID="ikU-YM-2wb">
+            <objects>
+                <viewController id="1Zg-VN-qRb" userLabel="View Controller - History" customClass="HistoryViewController" customModule="Boscloner" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eRi-TD-olc"/>
+                        <viewControllerLayoutGuide type="bottom" id="fRi-Sr-648"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qK7-Zf-mKU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Psu-mR-4xw">
+                                <rect key="frame" x="0.0" y="95" width="375" height="546"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" id="BpQ-ZF-d4u">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BpQ-ZF-d4u" id="2eF-s7-utq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9KM-Ji-w9U" userLabel="TopView">
+                                <rect key="frame" x="52.666666666666657" y="36" width="270" height="51"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All-In-One RFID Cloning Toolkit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usy-gV-Wrw">
+                                        <rect key="frame" x="0.0" y="31" width="196" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Boscloner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfQ-pI-HM4">
+                                        <rect key="frame" x="0.0" y="3" width="125" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bosclonerLogo" translatesAutoresizingMaskIntoConstraints="NO" id="jLx-gy-Xix">
+                                        <rect key="frame" x="211" y="3" width="56" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="4mQ-zf-bz1"/>
+                                    <constraint firstAttribute="height" constant="51" id="DWz-uB-FdM"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="okQ-4Y-cNP">
+                                <rect key="frame" x="0.0" y="641" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="swl-CY-NWY"/>
+                                    <barButtonItem systemItem="action" id="HnJ-yk-btk">
+                                        <connections>
+                                            <action selector="historyShareButton:" destination="1Zg-VN-qRb" id="9Sq-WD-mkt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="JYp-SP-pij"/>
+                                    <barButtonItem systemItem="trash" id="DHu-D9-11C">
+                                        <connections>
+                                            <action selector="historyDeleteButton:" destination="1Zg-VN-qRb" id="7Eq-Sq-KhV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="A0M-Y1-G14"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Psu-mR-4xw" firstAttribute="leading" secondItem="qK7-Zf-mKU" secondAttribute="leading" id="5yJ-cT-s4V"/>
+                            <constraint firstItem="fRi-Sr-648" firstAttribute="top" secondItem="okQ-4Y-cNP" secondAttribute="bottom" id="7KP-Wz-RGU"/>
+                            <constraint firstAttribute="trailing" secondItem="okQ-4Y-cNP" secondAttribute="trailing" id="8jd-eY-F9S"/>
+                            <constraint firstItem="okQ-4Y-cNP" firstAttribute="centerX" secondItem="qK7-Zf-mKU" secondAttribute="centerX" id="9BE-oA-S2t"/>
+                            <constraint firstItem="okQ-4Y-cNP" firstAttribute="leading" secondItem="qK7-Zf-mKU" secondAttribute="leading" id="LZN-Z4-wVd"/>
+                            <constraint firstItem="9KM-Ji-w9U" firstAttribute="centerX" secondItem="qK7-Zf-mKU" secondAttribute="centerX" id="XOK-7h-NiD"/>
+                            <constraint firstAttribute="trailing" secondItem="Psu-mR-4xw" secondAttribute="trailing" id="d8O-zV-Zh4"/>
+                            <constraint firstItem="9KM-Ji-w9U" firstAttribute="top" secondItem="qK7-Zf-mKU" secondAttribute="top" constant="36" id="hDC-Yk-Izp"/>
+                            <constraint firstItem="Psu-mR-4xw" firstAttribute="centerX" secondItem="qK7-Zf-mKU" secondAttribute="centerX" id="phY-4a-REQ"/>
+                            <constraint firstItem="okQ-4Y-cNP" firstAttribute="top" secondItem="Psu-mR-4xw" secondAttribute="bottom" id="wZl-XL-LKz"/>
+                            <constraint firstItem="Psu-mR-4xw" firstAttribute="top" secondItem="9KM-Ji-w9U" secondAttribute="bottom" constant="8" id="yCM-zO-jWV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="Kg3-rn-cmP"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="historyTableView" destination="Psu-mR-4xw" id="Wmr-9Z-h6v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egU-OT-yVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1865" y="1357"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8Zm-oe-8tA">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="YiH-Iv-rfr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZmA-Uk-XKl">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fX7-Oh-I7s"/>
+                        <segue destination="1Zg-VN-qRb" kind="relationship" relationship="viewControllers" id="DVa-Qv-x3H"/>
+                        <segue destination="cpO-rZ-Upb" kind="relationship" relationship="viewControllers" id="yNN-sb-QhQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJe-lE-gFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="505" y="219"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Write-Icon" width="240" height="240"/>
+        <image name="bosclonerLogo" width="226" height="169"/>
+        <image name="homeTabIcon" width="16" height="16"/>
+    </resources>
+</document>
