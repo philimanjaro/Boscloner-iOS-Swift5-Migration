@@ -492,7 +492,8 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
             print("case unauthorized")
         case .poweredOn:
             print("Power is On")
-        
+        @unknown default:
+            fatalError()
         }
     }
     
